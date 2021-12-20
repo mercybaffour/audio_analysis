@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.hero-bg {
+  background: url("/images/busy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 8%;
+  color: white;
+  text-align: center;
+  padding-bottom: .7em; 
+}
+
+header {
+  padding: 1em 0;
+
+}
+
+.hero-bg a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+section {
+  margin: 0 1em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 2em 0 1.2em;
+}
+
+h1 span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+h1 span::before {
+  content: ' ';
+  position: absolute;
+  width: 3em;
+  background: rgb(172, 85, 175);
+  height: .4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -.3em;
+}
+
+.hero-bg p {
+  font-weight: bold;
+  margin: 0 1em 3em;
+}
+
+.form-container {
+  background-color: white;
+  margin: 2em -1em 0;
+  padding: 2em;
+}
+
+label {
+  color: rgb(172, 85, 175);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  
+}
+
+select {
+  border: 1px solid rgb(172, 85, 175);
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 1.5em;
+}
+
+.form-container p {
+  color: gray;
+  font-weight: normal;
+  font-size: .9em;
+  margin-top: .3em;
+
+}
+
+input[type=button] {
+  background-color: #F89104;
+  border-radius: .7em;
+  width: 100%;
+  padding: 1em 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  margin-top: 1.2em;
+  color: white;
+}
+
+input[type=button]:hover {
+  background-color: rgb(216,126, 1);
+}
+
+.description {
+  margin: 0;
+
+}
+
+img {
+  width: 100%;
+}
+
+.right-col {
+  text-align: center;
+  margin: 3em 1 em;
+}
+
+h2 {
+  text-transform: uppercase;
+  position: relative;
+}
+
+h2::before {
+  content: ' ';
+  position: absolute;
+  width: 3em;
+  background: rgb(172, 85, 175);
+  height: .2em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -.3em;
+}
+
+p {
+  line-height: 2em;
+}
+
+/* Media Queries - responsive design */
+
+@media (min-width: 730px) {
+
+  section{
+    margin: 0 4em;
+  }
+
+  .form-container {
+    margin: 2em -4em 0;
+  }
+
+}
+
+@media (min-width: 930px) {
+
+  .hero-bg {
+    text-align: left;
+  }
+
+   .hero-bg p {
+    margin: 0 0 3em;
+  }
+
+
+  .form-container {
+    margin: 2em 0 0;
+    padding: 2em;
+    border-radius: .5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+
+  label {
+    margin: 0;
+  }
+
+  input[type="button"] {
+    font-size: 1.1em;
+    width: 95%;
+  }
+
+  .description {
+    display: flex;
+    min-height: 150px;
+
+  }
+
+  .description h2 {
+    margin-top: 3em;
+  }
+
+  .description p {
+    margin: 5em 5em;
+  }
+  .hero-bg section {
+    width: 40%;
+  }
+  .right-col {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  
+}
